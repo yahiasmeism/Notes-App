@@ -10,8 +10,10 @@ class NotesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeView(),
+    return MaterialApp(
+      theme: ThemeData(brightness: Brightness.dark),
+      debugShowCheckedModeBanner: false,
+      home: const HomeView(),
     );
   }
 }
